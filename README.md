@@ -1,4 +1,4 @@
-**INFORME DE INTELIGENCIA DE AMENAZAS (CTI) – VERSIÓN EXTENDIDA**
+**INFORME DE INTELIGENCIA DE AMENAZAS (CTI) – VERSIÓN EXTENDIDA PARTES 1-2-3**
 
 **Actor:** Jabaroot (alias JabaROOT, Jabaroot DZ, JabaRoot DZ)  
 **Fecha de elaboración:** 25 de agosto de 2026  
