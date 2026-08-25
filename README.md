@@ -1,7 +1,7 @@
 **INFORME DE INTELIGENCIA DE AMENAZAS (CTI) – VERSIÓN EXTENDIDA PARTES 1-2-3**
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=3500&pause=100&color=00FF00&center=true&vCenter=true&repeat=true&width=850&lines=Jabaroot+CTI+Report+2026;70.000+Agentes+%7C+DGST%2FDGSN;RAMED+17M+%7C+Pegasus+Teaser;Ceuta+Crisis+%7C+Plan+Oficial+Marruecos;Atribuci%C3%B3n+%7C+Brand+Hijacking;Insider+Threat+%7C+Guerra+de+Clanes;DarkForums+%7C+Telegram+OPSEC;Espa%C3%B1a-Marruecos+%7C+Hammouchi;Fouzi+Lekjaa+%7C+El+Himma" alt="Jabaroot CTI Banner" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=1000&pause=400&color=00FF88&center=true&vCenter=true&cursorColor=00FF88&width=880&lines=Jabaroot+CTI+Report+2026;70.000+Agentes+Filtrados+%7C+DGST%2FDGSN;RAMED+17M+%7C+Pegasus+Teaser;Ceuta+Crisis+%7C+Plan+Oficial+Marruecos;Atribuci%C3%B3n+%7C+Brand+Hijacking;Insider+Threat+%7C+Guerra+de+Clanes;DarkForums+%7C+Telegram+OPSEC;Espa%C3%B1a-Marruecos+%7C+Hammouchi;Fouzi+Lekjaa+%7C+El+Himma" alt="Jabaroot CTI Banner" />
 </p>
 
 **Actor:** Jabaroot (alias JabaROOT, Jabaroot DZ, JabaRoot DZ)  
