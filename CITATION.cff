@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Por favor, cita este repositorio como:"
+authors:
+  - family-names: "Threat Intelligence Analyst"
+    given-names: "OSINT Research Team"
+title: "Informe de Inteligencia de Amenazas sobre Jabaroot (2026)"
+date-released: 2026-08-25
+url: "https://github.com/[tu-usuario]/Jabaroot-Threat-Intel"
+repository-code: "https://github.com/Condor2026/Jabaroot-Threat-Intel"
+keywords:
+  - cti
+  - threat-intelligence
+  - osint
+  - jabaroot
+  - morocco
+  - spain
+  - cybersecurity
+license: MIT
