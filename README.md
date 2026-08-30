@@ -1146,5 +1146,210 @@ La operación de Jabaroot **está en curso** y el canal @jabaroot_off sigue abie
 *Documento basado exclusivamente en fuentes abiertas. Se recomienda actualización continua a medida que se disponga de nueva información.*
 
 
+----
+
+
+**INFORME DE INTELIGENCIA DE AMENAZAS (CTI) – VERSIÓN 4.0**
+
+**Actor:** Jabaroot (alias JabaROOT, Jabaroot DZ, JabaRoot DZ)  
+**Fecha de elaboración:** 25 de agosto de 2026  
+**Clasificación:** TLP:WHITE / Fuentes abiertas exclusivamente  
+**Estado del actor:** Activo – canal @jabaroot_off operativo; archivos en distribución masiva  
+**Versión:** 4.0 – Validación táctica de la filtración, patrones de distribución y análisis de riesgo operacional
+
+---
+
+## 1. Propósito de este documento
+
+Este informe es una **actualización táctica** del Informe 3.0. Su objetivo es incorporar el análisis de la **tabla de validación OSINT** (casos concretos de la lista de 70.000), el **patrón de distribución** de los archivos filtrados (incluyendo el enlace de LimeWire), y las **implicaciones operacionales** para los servicios de inteligencia marroquíes y españoles.
+
+Todas las afirmaciones se basan exclusivamente en fuentes abiertas disponibles al 25 de agosto de 2026.
+
+---
+
+## 2. Validación de la Lista – Análisis Táctico
+
+### 2.1. Metodología de validación OSINT
+
+La validación de la lista de 70.000 agentes está ocurriendo a través de un proceso de **verificación cruzada** que combina:
+
+1. **Cruces con fuentes abiertas**: nombres, CIN, PPR y fechas de nacimiento se cotejan con registros públicos (LinkedIn, prensa, listas de egresados, etc.).
+2. **Confirmación por exagentes**: fuentes humanas con conocimiento interno han validado la pertenencia de algunos nombres a la DGST/DGSN.
+3. **Validación por servicios de inteligencia europeos**: el CNI español ha reconocido nombres de agentes que ya estaban bajo investigación.
+
+### 2.2. Ejemplos de validación (extraídos de la tabla compartida)
+
+| # | Nombre | Nivel de Indicio | Justificación | Riesgo Operacional |
+|---|--------|------------------|---------------|-------------------|
+| 1 | **HAMMOUCHI ABDELLATIF** | **FUERTE** | Director de DGST/DGSN. Nombre público, condecorado por España. Operaciones Pegasus confirmadas. | **Crítico** – Exposición del máximo responsable de inteligencia marroquí. |
+| 2 | **MANSOURI IDRISS** | **MODERADO** | Posible Yassine Mansouri (exdirector DGED). Confusión de nombre o servicio. | **Alto** – Si se confirma, es la filtración de un exdirector de inteligencia exterior. |
+| 3 | **LEMSIEH KHALID** | **DÉBIL** | PPR #3 (recluta inicial). Familia con conexiones DGST. Sin confirmación externa. | **Medio** – Riesgo de doxxing de un empleado de larga trayectoria. |
+| 4 | **BOUTARAK YASSINE** | **DÉBIL** | Apellido vinculado a exalcalde de Casablanca. Sin conexión España confirmada. | **Bajo** – Posible falso positivo o error en la base de datos. |
+| 5 | **BENJAAFAR LARBI** | **DÉBIL** | Apellido similar a exministro. Sin conexión España. | **Bajo** – Probable homónimo o error. |
+| 6 | **EL MERNISSI AMAR** | **DÉBIL** | Seis familiares en el dataset. Posible red de informantes. | **Medio** – Riesgo de exposición de una red familiar vinculada a la DGST. |
+
+### 2.3. Patrón de validación
+
+- **Los nombres de alto perfil (Hammouchi) son fáciles de verificar** y aportan credibilidad al conjunto.
+- **Los nombres desconocidos o con apellidos comunes tienen un nivel de indicio bajo**, lo que sugiere que parte de la lista puede contener errores, homónimos o datos antiguos.
+- **El nivel de riesgo operacional varía enormemente**: desde crítico (Hammouchi) hasta bajo (posibles falsos positivos).
+
+### 2.4. Implicación para la credibilidad del dataset
+
+La presencia de nombres de alto perfil **validados por exagentes y el CNI** eleva la credibilidad general del dataset, pero no garantiza que el 100% sea auténtico. La mezcla de datos precisos con posibles errores es un patrón común en filtraciones de este tipo (reutilización de bases de datos antiguas, mezcla de fuentes, etc.).
+
+---
+
+## 3. Patrón de Distribución de la Filtración
+
+### 3.1. Canales de distribución identificados
+
+| Canal | Ejemplo | Estado | Riesgo |
+|-------|---------|--------|--------|
+| **Telegram** | @jabaroot_off | Activo | Canal principal de comunicación del actor. |
+| **Foros de leaks** | DarkForums.ru | Activo | Distribución de archivos completos. |
+| **Intercambio de archivos** | LimeWire (morocco_dgsn_dgst.zip) | Activo (enlace con expiración de 2 días) | Distribución viral y descentralizada. |
+| **Redes sociales** | Twitter/X (@iagovar) | Activo | Amplificación y enlaces de descarga. |
+| **Replicación en otros canales** | Múltiples cuentas de Telegram y foros | Activo | Distribución masiva y difícil de controlar. |
+
+### 3.2. El archivo `morocco_dgsn_dgst.zip`
+
+- **Alojado en:** LimeWire
+- **Tamaño:** 1.40 MB
+- **Subido por:** Anónimo
+- **Expiración:** 2 días desde su publicación
+- **Hash (identificador):** `THofnEYTObFkdcQhCGFmeAIoc/PAK5HAWIgqSgentD3E13a6eA==`
+
+**Nota de seguridad:** No se ha verificado el contenido del archivo. Podría contener:
+- Una muestra del dataset de 70.000 registros.
+- El dataset completo (aunque el tamaño sugiere que es una muestra).
+- Software malicioso (riesgo de descarga).
+
+**Recomendación:** No descargar el archivo sin un análisis en entorno aislado (sandbox). Si se desea verificar, usar VirusTotal o Any.Run.
+
+### 3.3. Implicaciones del patrón de distribución
+
+1. **La filtración se está descentralizando**: una vez que los archivos están en foros y plataformas de intercambio, es casi imposible contenerlos.
+2. **La presión sobre Marruecos aumenta**: la exposición de nombres y datos personales continuará a medida que más investigadores OSINT crucen la información.
+3. **El actor mantiene el control narrativo**: Jabaroot sigue usando Telegram para comunicar amenazas y nuevos teasers, mientras los archivos circulan por otros canales.
+
+---
+
+## 4. Riesgo Operacional para los Agentes Expuestos
+
+### 4.1. Niveles de riesgo por categoría
+
+| Categoría | Número estimado | Riesgo | Consecuencia |
+|-----------|-----------------|--------|--------------|
+| **Altos cargos** (directores, jefes de unidad) | ~2-5% (1.400-3.500) | **Crítico** | Exposición pública, presión mediática, posible jubilación forzada. |
+| **Agentes de campo (en el extranjero)** | ~25-30% (17.500-21.000) | **Alto** | Riesgo de detención, chantaje, compromiso de misiones. |
+| **Agentes de campo (dentro de Marruecos)** | ~20-25% (14.000-17.500) | **Medio-Alto** | Doxxing, exposición a represalias de grupos criminales o terroristas. |
+| **Informantes y colaboradores** | ~20-30% (14.000-21.000) | **Crítico** | Riesgo de ser identificados y puestos en peligro físico. |
+| **Personal administrativo** | ~15-20% (10.500-14.000) | **Medio** | Exposición de datos personales, fraude bancario. |
+
+### 4.2. Consecuencias inmediatas
+
+- **Reubicación o cambio de identidad** para agentes de alto perfil y sus familias.
+- **Cierre de operaciones en el extranjero** (especialmente en España y Europa).
+- **Riesgo de represalias** por parte de grupos criminales o terroristas que puedan identificar a los agentes que los persiguen.
+- **Posible fuga de informantes** que, al ser identificados, dejarán de colaborar o buscarán protección.
+
+### 4.3. El caso de los informantes (el "riesgo invisible")
+
+Los informantes y colaboradores son la categoría más vulnerable:
+- No son personal de carrera, por lo que no tienen la protección institucional de la DGST/DGSN.
+- Pueden ser identificados por su nombre, DNI o relación con algún agente de campo.
+- Su exposición puede llevar a **represalias físicas** o a la **ruptura de redes de inteligencia** que han tardado años en construirse.
+
+---
+
+## 5. Análisis de la Respuesta de Marruecos (actualizado)
+
+### 5.1. Acciones conocidas hasta el momento
+
+| Acción | Estado | Observaciones |
+|--------|--------|---------------|
+| **Solicitud a Telegram para cierre de canales** | En curso (canal @jabaroot_off sigue abierto) | No ha sido efectiva en el canal actual. |
+| **Comunicado oficial del gobierno** | No emitido | Silencio estratégico para no dar visibilidad. |
+| **Investigación interna** | No confirmada | Sin información pública. |
+| **Medidas de protección para agentes expuestos** | No confirmadas | Cambio de identificadores, protección de cuentas bancarias, etc. |
+
+### 5.2. Hipótesis sobre la respuesta de Rabat
+
+1. **Silencio estratégico**: Rabat está evitando declaraciones públicas para no alimentar la narrativa de Jabaroot ni darle más visibilidad.
+2. **Evaluación interna del daño**: los servicios de inteligencia están evaluando el alcance real de la filtración y el riesgo para cada agente expuesto.
+3. **Negociación con plataformas**: posiblemente se esté trabajando de forma discreta con Telegram para cerrar el canal.
+4. **Preparación de una respuesta legal o diplomática**: si se confirma la implicación de Argelia, podría haber una escalada diplomática.
+
+### 5.3. Señales de contra-inteligencia
+
+- **Cierres previos de canales de Jabaroot** indican que Marruecos tiene capacidad para presionar a Telegram, aunque no haya funcionado esta vez.
+- **La atribución a Argelia** se mantiene constante, lo que sugiere que Rabat está tratando de enmarcar la filtración como un ataque externo, no como un problema interno.
+
+---
+
+## 6. Recomendaciones Tácticas Actualizadas
+
+### 6.1. Para Marruecos
+
+| Prioridad | Acción | Plazo |
+|-----------|--------|-------|
+| **Crítica** | Identificar y proteger a los informantes y colaboradores expuestos (riesgo físico). | 24-48h |
+| **Crítica** | Cambiar identificadores y cuentas bancarias de los agentes expuestos (especialmente los 1.400 con RIB). | 24-48h |
+| **Alta** | Establecer un canal de comunicación interna para que los agentes expuestos reporten cualquier anomalía. | 48-72h |
+| **Alta** | Emitir un comunicado interno a todo el personal de la DGST/DGSN con instrucciones de seguridad. | 48-72h |
+| **Media** | Solicitar formalmente a LimeWire y otros servicios de intercambio la retirada de los archivos filtrados. | 1 semana |
+
+### 6.2. Para España
+
+| Prioridad | Acción | Plazo |
+|-----------|--------|-------|
+| **Crítica** | Verificar los nombres de agentes filtrados que hayan operado en España y evaluar el riesgo para sus contactos. | 24-48h |
+| **Alta** | Reforzar la vigilancia en Ceuta y Melilla ante posibles nuevos movimientos migratorios. | Inmediato |
+| **Alta** | Preparar un plan de comunicación en caso de que se publiquen datos de Pegasus sobre Pedro Sánchez. | 1 semana |
+
+### 6.3. Para la Comunidad OSINT/CTI
+
+| Prioridad | Acción | Plazo |
+|-----------|--------|-------|
+| **Crítica** | Monitorear los enlaces de distribución (LimeWire, Telegram, DarkForums) y reportar nuevos archivos. | Continuo |
+| **Alta** | Verificar la autenticidad de los archivos mediante sandboxes (VirusTotal, Any.Run) sin descargarlos directamente. | Inmediato |
+| **Alta** | Compartir IOCs (hashes, enlaces, handles) en plataformas de colaboración (MISP). | Inmediato |
+
+---
+
+## 7. Preguntas Abiertas y Líneas de Investigación
+
+1. **¿El archivo `morocco_dgsn_dgst.zip` contiene el dataset completo o solo una muestra?**
+2. **¿Hay otros archivos circulando en otras plataformas (Mega, Dropbox, foros rusos)?**
+3. **¿La segunda lista de 1.400 RIB está también en circulación o solo mencionada por Jabaroot?**
+4. **¿Los datos son actuales o históricos (obtenidos hace años)?**
+5. **¿Qué está haciendo Marruecos para mitigar el daño a informantes y colaboradores?**
+
+---
+
+## 8. Conclusión del Informe 4.0
+
+Este informe ha incorporado:
+
+- **Validación táctica** de la lista de 70.000 mediante cruce OSINT, con ejemplos concretos y niveles de riesgo.
+- **Análisis del patrón de distribución**, incluyendo el enlace de LimeWire y la descentralización de la filtración.
+- **Evaluación del riesgo operacional** para agentes de campo, informantes y altos cargos.
+- **Actualización de la respuesta de Marruecos** y recomendaciones tácticas priorizadas.
+
+**La amenaza sigue siendo crítica.** La combinación de datos personales, distribución masiva y validación parcial por fuentes independientes hace que esta filtración sea **la mayor brecha de seguridad en la historia moderna de Marruecos**.
+
+**El canal @jabaroot_off sigue abierto.** La operación no ha concluido, y la promesa de la lista de coordinadores de Ceuta y los datos de Pegasus mantiene el riesgo de escalada.
+
+---
+
+**Fin del Informe 4.0**
+
+*Documento basado exclusivamente en fuentes abiertas. Se recomienda actualización continua a medida que se disponga de nueva información.*
+
+
+
+
+
 
 
